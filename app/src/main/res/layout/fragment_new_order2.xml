@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NewOrder2Fragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_marginBottom="40dp"
+            android:text="New Order" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+            android:text="Good type :" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/radioGroup1">
+            <RadioButton android:id="@+id/furniture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Furniture"
+                android:layout_marginHorizontal="5dp" />
+            <RadioButton android:id="@+id/dry_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dry goods"
+                android:layout_marginHorizontal="5dp" />
+            <RadioButton android:id="@+id/food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:layout_marginHorizontal="5dp" />
+            <RadioButton android:id="@+id/other_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Materials"
+                android:layout_marginHorizontal="5dp" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+            android:text="Weight (g) length (cm) width (cm) height (cm):" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <NumberPicker
+                android:id="@+id/weight_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:solidColor="#6750A3" />
+            <NumberPicker
+                android:id="@+id/length_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:solidColor="#6750A3" />
+            <NumberPicker
+                android:id="@+id/width_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:solidColor="#6750A3" />
+            <NumberPicker
+                android:id="@+id/height_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:solidColor="#6750A3" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+            android:text="Vehicle type :" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup2"
+            android:layout_marginBottom="10dp">
+            <RadioButton android:id="@+id/truck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Truck"
+                android:layout_marginHorizontal="5dp" />
+            <RadioButton android:id="@+id/van"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Van"
+                android:layout_marginHorizontal="5dp" />
+            <RadioButton android:id="@+id/mini_truck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mini truck"
+                android:layout_marginHorizontal="5dp"/>
+            <RadioButton android:id="@+id/other_vehicle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Refrigerated truck"
+                android:layout_marginHorizontal="5dp" />
+        </RadioGroup>
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create an order" />
+    </LinearLayout>
+</FrameLayout>
